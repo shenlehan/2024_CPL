@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/Files/CPL/4-loops/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\behaviors.dir\\behaviors.c.obj -c D:\\Files\\CPL\\4-loops\\behaviors.c",
+  "file": "D:/Files/CPL/4-loops/behaviors.c",
+  "output": "CMakeFiles/behaviors.dir/behaviors.c.obj"
+}
+]

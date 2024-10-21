@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/Files/CPL/build/1-types-io",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\address.dir\\address.c.obj -c D:\\Files\\CPL\\1-types-io\\address.c",
+  "file": "D:/Files/CPL/1-types-io/address.c",
+  "output": "1-types-io/CMakeFiles/address.dir/address.c.obj"
+},
+{
+  "directory": "D:/Files/CPL/build/4-loops",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\behaviors.dir\\behaviors.c.obj -c D:\\Files\\CPL\\4-loops\\behaviors.c",
+  "file": "D:/Files/CPL/4-loops/behaviors.c",
+  "output": "4-loops/CMakeFiles/behaviors.dir/behaviors.c.obj"
+}
+]
