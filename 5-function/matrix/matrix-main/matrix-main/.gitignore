@@ -1,0 +1,8 @@
+*
+!include/
+!src/
+!**/*.[ch]
+!.gitignore
+!Makefile
+!CMakeLists.txt
+!README.md
