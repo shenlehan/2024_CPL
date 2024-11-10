@@ -1,0 +1,3 @@
+D:/Files/CPL/5-function/natcn-main/natcn-main/cmake-build-debug/CMakeFiles/natcn.dir
+D:/Files/CPL/5-function/natcn-main/natcn-main/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Files/CPL/5-function/natcn-main/natcn-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
