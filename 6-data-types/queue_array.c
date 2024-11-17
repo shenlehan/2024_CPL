@@ -14,7 +14,6 @@ void Out() {
     ++front;
 }
 
-
 void Cat() {
     if (tail - front == 0) {
         printf("0 []");
