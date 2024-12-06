@@ -12,6 +12,8 @@ int isleft(char ch) {
 }
 
 int match(char ch) {
+    if (top == 0)
+        return 0; // remember to judge non-empty!
     if (ch == ')') {
         return s[top - 1] == '(';
     } else if (ch == ']') {
