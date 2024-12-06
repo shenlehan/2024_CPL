@@ -1,4 +1,4 @@
-# Install script for directory: D:/Files/CPL/3-for-a-while
+# Install script for directory: E:/CPL/3-for-a-while
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,7 +32,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
+# Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "D:/Software/Toolbox/CLion/bin/mingw/bin/objdump.exe")
 endif()

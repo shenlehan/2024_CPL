@@ -1,9 +1,8 @@
 # ninja log v6
 2	87	7511173999983788	1-types-io/address.exe	6e5ffd2081ee1d2d
-1	418	7486794897362057	CMakeFiles/CPL.dir/main.c.obj	7460c7d448156e2f
 4	158	7511091698185770	1-types-io/CMakeFiles/address.dir/address.c.obj	f5bf0bfba388a1c1
 421	509	7486794901550139	CPL.exe	10a221688a7d97da
 3	292	7511168645928012	1-types-io/CMakeFiles/address.dir/__/4-loops/mines.c.obj	d8ff22eabef27708
-1	222	7511321635848806	build.ninja	d3f24ae172ef20d3
+1	222	7551832844078274	build.ninja	d3f24ae172ef20d3
 1	119	7511174090797907	4-loops/CMakeFiles/behaviors.dir/behaviors.c.obj	79508602544792fd
 120	214	7511174091975344	4-loops/behaviors.exe	bfa957e20ce2e2e0

@@ -1,0 +1,127 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "1-types-io",
+					"jsonFile" : "directory-1-types-io-Debug-5abdedb8edd194e65f14.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "1-types-io",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "2-if-for-array",
+					"jsonFile" : "directory-2-if-for-array-Debug-ca8a799a0090f7607813.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "2-if-for-array"
+				},
+				{
+					"build" : "3-for-a-while",
+					"jsonFile" : "directory-3-for-a-while-Debug-e9fd9556f956e86b7b11.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3-for-a-while"
+				},
+				{
+					"build" : "4-loops",
+					"jsonFile" : "directory-4-loops-Debug-5c7f24df03c5c0467ec8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "4-loops",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "CPL",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "address::@592ee50047900f3dac72",
+					"jsonFile" : "target-address-Debug-4d4f3cd2d84de3e4ba5e.json",
+					"name" : "address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "behaviors::@b89cdeb732e8a284e7d7",
+					"jsonFile" : "target-behaviors-Debug-0dd367b4dd0faff81bb5.json",
+					"name" : "behaviors",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/CPL/cmake-build-debug",
+		"source" : "E:/CPL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
