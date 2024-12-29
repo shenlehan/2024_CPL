@@ -1,0 +1,21 @@
+10
+To Kill a Mockingbird by Harper Lee
+29.6
+1984 by George Orwell
+11.2
+Pride and Prejudice by Jane Austen
+35.00
+The Great Gatsby by F. Scott Fitzgerald
+26.00
+The Catcher in the Rye by J.D. Salinger
+102.10
+Dune by Frank Herbert
+37.38
+Neuromancer by William Gibson
+40.52
+The Hitchhiker's Guide to the Galaxy by Douglas Adams
+26.58
+Brave New World by Aldous Huxley
+70.36
+Snow Crash by Neal Stephenson
+54.25
