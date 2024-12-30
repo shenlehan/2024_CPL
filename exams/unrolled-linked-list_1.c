@@ -67,15 +67,20 @@ void Query(int pos) {
     // Dump();
 }
 
-void merge(Node *n1, Node *n2) {
-    if (n1->size + n2->size <= B - 1) {
-        for (int i = 0; i < n2->size; ++i) {
-            n1->str[n1->size++] = n2->str[i];
+void merge() {
+    Node *temp;
+    for (Node *p = head; p; p = p->next) {
+        while (p->next && (p->size + p->next->size) <= B) {
+            for (int i = 0; i < p->next->size; ++i) {
+                p->str[(p->size)++] = p->next->str[i];
+            }
+            temp = p->next;
+            p->next = p->next->next;
+            free(temp);
         }
-        // log("n1->size=%d", n1->size);
-        n1->next = n2->next;
     }
 }
+
 
 void InsertString(int pos, const char *s) {
     // insert after p
@@ -129,47 +134,14 @@ void InsertString(int pos, const char *s) {
     // Dump();
 
     // merge
-    for (Node *p = head; p; p = p->next) {
-        if (p->next != NULL)
-            merge(p, p->next);
-    }
-    log("~~~~~~~~~");
-    Dump();
-}
-
-void InsertAtHead(char *s) {
-    Node *prev, *newNode;
-    int len = strlen(s), pp = 0;
-
-    prev = calloc(1, sizeof(struct Node));
-    for (; pp < B - 1; ++pp) {
-        // Append()
-    }
-
-    while (pp < len) {
-        // block size = B - 1
-        newNode = calloc(1, sizeof(Node));
-        if (pp + B - 1 < len) {
-            newNode->size = B - 1;
-            for (int i = 0; i < B - 1; ++i) {
-                newNode->str[i] = s[pp + i];
-            }
-            pp += B - 1;
-            Insert(prev, newNode);
-        } else {
-            newNode->size = len - pp;
-            for (int i = 0; i < newNode->size; ++i) {
-                newNode->str[i] = s[pp + i];
-            }
-            Insert(prev, newNode);
-            break;
-        }
-        prev = newNode;
-    }
+    merge();
+    // log("~~~~~~~~~");
+    // Dump();
 }
 
 int main() {
-    freopen("data.txt", "r", stdin);
+    // freopen("data.txt", "r", stdin);
+    // freopen("ull.txt", "r", stdin);
     scanf("%d %d", &n, &q);
     getchar();
     char ch;
@@ -187,11 +159,7 @@ int main() {
             Query(x);
         } else {
             scanf("%s", str);
-            if (x == -1) {
-                InsertAtHead(str);
-            } else {
-                InsertString(x, str);
-            }
+            InsertString(x, str);
         }
     }
     return 0;

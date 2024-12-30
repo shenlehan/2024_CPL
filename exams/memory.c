@@ -59,16 +59,19 @@ void merge() {
     for (Node *p = head; p; p = p->next) {
         while (p->next && p->next->l == p->r) {
             if (p->next == tail) tail = p;
+            Node *temp = p->next;
             p->r = p->next->r;
             p->next = p->next->next;
             // if (!p->next) break;
+            free(temp);
         }
     }
 }
 
 void Free(int id) {
     int l = a[id].l, r = a[id].r;
-    // before head
+    
+    // insert before head
     Node *newNode = calloc(1, sizeof(Node));
     newNode->l = l, newNode->r = r;
     if (r <= head->l) {
@@ -101,7 +104,8 @@ void Free(int id) {
 }
 
 int main() {
-    freopen("mem.txt", "r", stdin);
+    freopen("test8.in", "r", stdin);
+    freopen("out.txt", "w", stdout);
     scanf("%d %d", &T, &n);
     init();
     for (int NUM = 1; NUM <= T; ++NUM) {
@@ -109,6 +113,7 @@ int main() {
         if (opt == 1) {
             int size;
             scanf("%d", &size);
+
             // allocate size
             ++alloNum;
             if(!alloc(size)) {
@@ -118,7 +123,9 @@ int main() {
         } else if (opt == 2) {
             int id;
             scanf("%d", &id);
-            if (a[id].suc != 0) {
+            if (id > alloNum) {
+                printf("free fail\n");
+            } else if (a[id].suc != 0) {
                 Free(id);
                 a[id].suc = 0;
                 printf("free success\n");
