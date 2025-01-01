@@ -78,6 +78,7 @@ void Free(int id) {
         newNode->next = head;
         head->prev = newNode;
         head = newNode;
+        merge();
         return;
     }
 

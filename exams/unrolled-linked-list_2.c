@@ -131,7 +131,7 @@ void ins(int pos) {
 }
 
 int main() {
-    // freopen("ull.txt", "r", stdin);
+    freopen("ull.txt", "r", stdin);
     scanf("%d %d", &n, &q);
     scanf("%s", str);
     head = init();
