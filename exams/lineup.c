@@ -48,7 +48,7 @@ void init() {
 }
 
 int main() {
-    freopen("lineup.txt", "r", stdin);
+    // freopen("lineup.txt", "r", stdin);
     scanf("%d %d %d", &n, &m, &q);
     init();
     
@@ -97,7 +97,7 @@ int main() {
             ans += p->val;
             p = p->r;
         }
-        printf("%d\n",ans);
+        printf("%lld\n",ans);
     }
 
     return 0;
