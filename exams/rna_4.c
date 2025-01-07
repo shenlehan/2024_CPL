@@ -40,7 +40,7 @@ void change (int i,LinkList *ll){
         for (int k=0;k<strlen(a[i]);k++){
             if (a[i][k]!=ptr1->ch) {flag=false;break;}
             else {ptr1=ptr1->next;}
-        // }
+        }
         if (flag==true){
             for(int k=0;k<strlen(b[i]);k++){
                 preptr->next=getnode(b[i][k]);

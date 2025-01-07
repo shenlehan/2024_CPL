@@ -1,1 +1,7 @@
-9-double-pointers-struct/.vscode/settings.json
+/.cache/
+/.vscode/
+/build
+/cmake-build-debug
+/output
+list_demo.zip
+CMakeLists.txt
